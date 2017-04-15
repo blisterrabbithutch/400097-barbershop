@@ -8,7 +8,9 @@
 	<header class="main-header">
 	  <div class="container">
 	    <div class="header-logo">
-	    	<img src="img/header-logo.png" alt="Барбершоп логотип">
+	    	<a class="header-logo" href="#">
+	    		<img src="img/header-logo.png" alt="Барбершоп логотип">
+	    	</a>
 	    </div>
 		<nav class="main-nav">
 			<ul>
@@ -28,36 +30,40 @@
 	<div class="title">
 		<h1>Средства для ухода</h1>
 		<ul>
-			<li><a href="">Главная</a></li>
-			<li><a href="">Магазин</a></li>
-			<li><a class="selected-topic" href="">Средства для ухода</a></li>
+			<li><a>Главная</a></li>
+			<li><a>Магазин</a></li>
+			<li><a class="selected-topic">Средства для ухода</a></li>
 		</ul>
 	</div>
-	<section class="filter-list">
-	  <h2>Производители</h2>
-	    <div class="filter-brand">
-	  	  <label><input type="checkbox">Baxter of california</label>
-	 	  <label><input type="checkbox">Mr Natty</label>
-	  	  <label><input type="checkbox">Cuavecito</label>
-	  	  <label><input type="checkbox">Malin+Goetz</label>
-	  	  <label><input type="checkbox">Murray's</label>
-	  	  <label><input type="checkbox">American Crew</label>
-	    </div>
-	  <h2>Группы товаров</h2>
-	  <div class="filter-type">
-	  	<label><input type="radio" name="1">Бритвенные принадлежности</label>
-	  	<label><input type="radio" name="1">Средства для ухода</label>
-	  	<label><input type="radio" name="1">Аксессуары</label>
-	  </div>
-	  <div class="filter-button">
-		  <a href="#" class="login">Показать</a>
-		</div>
-	</section>
-	<section class="feature-list">
-	  	<div class="feature-item">
-	  		<figure class="gallery-photo">
+	<div class="shop-main-content">
+	  <section class="filter-list">
+	    <h2>Производители</h2>
+	      <form action="#" method="get">
+	        <div class="filter-brand">
+	  	      <label><input type="checkbox" name="brand-name">Baxter of california</label>
+	 	      <label><input type="checkbox" name="brand-name">Mr Natty</label>
+	  	      <label><input type="checkbox" name="brand-name">Cuavecito</label>
+	  	      <label><input type="checkbox" name="brand-name">Malin+Goetz</label>
+	  	      <label><input type="checkbox" name="brand-name">Murray's</label>
+	  	      <label><input type="checkbox" name="brand-name">American Crew</label>
+	        </div>
+	        <h2>Группы товаров</h2>
+	        <div class="filter-type">
+              <label><input type="radio" name="brand-type" value="brand-type filter">Бритвенные принадлежности</label>
+	  	      <label><input type="radio" name="brand-type" value="brand-type filter">Средства для ухода</label>
+	  	      <label><input type="radio" name="brand-type" value="brand-type filter">Аксессуары</label>
+	        </div>
+	        <div class="filter-button">
+		      <input type="submit" value="Показать">
+		    </div>
+		    </div>
+		  </form>		  
+	  </section>
+	  <section class="feature-list">
+	    <div class="feature-item">
+	  		<div class="gallery-photo">
 	  			<img src="" alt="">
-	  		</figure>
+	  		</div>
 	  		<p class="feature-item-shop-description">
 	  		  Набор для путешествий<br>
 	  		  «Baxter of California»</p>
@@ -67,9 +73,9 @@
 	  		</div>
 	  	</div>
 	  	<div class="feature-item">
-	  		<figure class="gallery-photo">
+	  		<div class="gallery-photo">
 	  			<img src="" alt="">
-	  		</figure>
+	  		</div>
 	  		<p class="feature-item-description">
 	  		  Увлажняющий кондиционер<br>
 	  		  «Baxter of California»</p>
@@ -79,9 +85,9 @@
 	  		</div>
 	  	</div>
 	  	<div class="feature-item">
-	  		<figure class="gallery-photo">
+	  		<div class="gallery-photo">
 	  			<img src="" alt="">
-	  		</figure>
+	  		</div>
 	  		<p class="feature-item-description">
 	  			Гель для волос<br>
 	  			«SUAVECITO»
@@ -92,9 +98,9 @@
 	  		</div>
 	  	</div>
 	  	<div class="feature-item">
-	  		<figure class="gallery-photo">
+	  		<div class="gallery-photo">
 	  			<img src="" alt="">
-	  		</figure>
+	  		</div>
 	  		<p class="feature-item-description">
 	  			Глина для укладки волос<br>
 	  			«American crew»
@@ -105,9 +111,9 @@
 	  		</div>
 	  	</div>
 	  	<div class="feature-item">
-	  		<figure class="gallery-photo">
-	  			<img src="" alt="">
-	  		</figure>
+	  	    <div class="gallery-photo">
+	  		  <img src="" alt="">
+	  		</div>
 	  		<p class="feature-item-description">
 	  			Гель для волос<br>
 	  			«AMERICAN CREW»
@@ -118,25 +124,26 @@
 	  		</div>
 	  	</div>
 	  	<div class="feature-item">
-	  		<figure class="gallery-photo">
+	  		  <div class="gallery-photo">
 	  			<img src="" alt="">
-	  		</figure>
-	  		<p class="feature-item-description">
+	  		  </div>
+	  		  <p class="feature-item-description">
 	  			Набор для бритья<br>
 	  			«Baxter of California»
-	  		</p>
-	  		<div class="price">3900 РУБ.</div>
-	  		<div class="feature-item-button">
-			  <a href="" class="shop-button">Купить</a>	  			
-	  		</div>
-	  	</div>
-	  	<div class="feature-list-buttons">
-	  	  <div class="feature-list-screen"><a href="#" class="login">1</a></div>
-	  	  <div class="feature-list-screen"><a href="#" class="login">2</a></div>
-	  	  <div class="feature-list-screen"><a href="#" class="login">3</a></div>
-	  	  <div class="feature-list-screen"><a href="#" class="login">4</a></div>		  
-		</div>
-	</section>		
+	  		  </p>
+	  		  <div class="price">3900 РУБ.</div>
+	  		  <div class="feature-item-button">
+			    <a href="" class="shop-button">Купить</a>	  			
+	  	      </div>
+	  	    </div>
+	  	    <div class="feature-list-buttons">
+	  	      <div class="feature-list-screen"><a href="#" class="login">1</a></div>
+	  	      <div class="feature-list-screen"><a href="#" class="login">2</a></div>
+	  	      <div class="feature-list-screen"><a href="#" class="login">3</a></div>
+	  	      <div class="feature-list-screen"><a href="#" class="login">4</a></div>		  
+		    </div>
+	  </section>
+	</div>		
 	</main>
 	<footer class="main-footer">
 	  <div class="container">
